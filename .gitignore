@@ -12,3 +12,4 @@ $ cat .gitignore
 /__pycache__
 /images_grafik/*.jpg
 *.db
+rnn.py
