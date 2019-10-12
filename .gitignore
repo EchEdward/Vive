@@ -1,0 +1,13 @@
+$ cat .gitignore
+
+*.spec
+/build
+/dist
+/Hesh_files
+*.db
+/gr_sb/*.jpg
+/Op_FIg/*.jpg
+/result_schemes/*.jpg
+/.mypy_cache
+/__pycache__
+/images_grafik/*.jpg
