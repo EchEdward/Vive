@@ -11,3 +11,4 @@ $ cat .gitignore
 /.mypy_cache
 /__pycache__
 /images_grafik/*.jpg
+*.db
