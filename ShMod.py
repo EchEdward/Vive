@@ -3,6 +3,7 @@ Probel = 10
 Probel_h = 4
 
 
+
 def RazdYch(ivl, vvl, per, km, N_op, font_size,per_name):
     """ Функция для определения элементарных участков ветви,
      длин участков, растояний между ВЛ"""

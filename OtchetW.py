@@ -9,6 +9,7 @@ from PIL import Image
 Razd_simv = '-'
 
 
+
 def Word(inf, lbsz, f, f2, fname, name_vl, NS, var,grop,zpps,per_name,D_file, Trig,tablepo):
     # Создаём объект документа
     if Trig: #'template_word/default.docx'

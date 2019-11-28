@@ -1,5 +1,6 @@
 import sqlite3
 
+
 DB=sqlite3.connect('VLdatabase.db') # Открываем (создаём) базу данных
 cur=DB.cursor()        # Создаем объект-курсор
 

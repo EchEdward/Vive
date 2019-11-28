@@ -9,6 +9,7 @@ arial_font = fm.FontProperties(fname = "Fonts/arial.ttf")
 
 import numpy as np
 
+
 sp1 = ["","","","o","v","^","<",">","1","2","3","4","s","p","*","h","H","+","x","D","d",
        "o","v","^","<",">","1","2","3","4","s","p","*","h","H","+","x","D","d"]
 

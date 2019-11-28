@@ -5,6 +5,7 @@ from PyQt5.QtCore import Qt
 import sys
 
 
+
 class KOp(QWidget):
     def __init__(self,parent=None):
         super(KOp,self).__init__(parent)

@@ -2,6 +2,7 @@ import Kat_lists as Kl
 import rnn
 from openpyxl import load_workbook
 
+
 Katalog=rnn.ExDict()
 """ XHkat={ 'ABC': 1, 'ACB': 2, 'BCA': 3, 'BAC': 4, 'CAB': 5, 'CBA': 6,
                 '-ABC': -6, '-ACB': -3, '-BCA': -2, '-BAC': -5, '-CAB': -4, '-CBA': -1} """

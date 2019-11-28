@@ -11,6 +11,7 @@ from PIL import Image
 
 
 
+
 def WordSxT(sp_t,sp_op,d_PZ,ku1,fname,name_vl, D_file, Trig):
 
     # Создаём объект документа

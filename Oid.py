@@ -10,6 +10,7 @@ from docx.oxml.shared import OxmlElement, qn
 from PIL import Image
 
 
+
 def WordOid(vvl, sp_pzy,nm_d, ivl_gr, fname,nVL,grop, D_file, Trig):
 
     # Создаём объект документа

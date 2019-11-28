@@ -12,6 +12,7 @@ import scipy.sparse as sparse
 import scipy.sparse.linalg as linalg
 from time import time
 
+
 # Открываем каталог с данными по опорам и проводникам
 Katal = openpyxl.load_workbook(filename = 'Katal.xlsx')
 # выбирем необходимый рабочий лист

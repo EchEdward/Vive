@@ -12,6 +12,7 @@ XHkat = { 'ABC': 1, 'ACB': 2, 'BCA': 3, 'BAC': 4, 'CAB': 5, 'CBA': 6,
         
 Razd_simv = '-'
 
+
 # Открываем каталог с данными по опорам и проводникам
 Katal = openpyxl.load_workbook(filename = 'Katal.xlsx')
 # выбирем необходимый рабочий лист

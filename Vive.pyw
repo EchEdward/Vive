@@ -6,6 +6,7 @@ from PyQt5.QtCore import Qt
 import sys
 
 
+
 # Выводим заствку
 app=QApplication(sys.argv)
 splash=QSplashScreen(QPixmap('Pictures/splash.jpg'))
