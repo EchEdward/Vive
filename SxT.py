@@ -82,7 +82,7 @@ def WordSxT(sp_t,sp_op,d_PZ,ku1,fname,name_vl, D_file, Trig):
     
     p[5]=document.add_paragraph('2.1. Заземлить ВЛ на ПЗ на ПС указанной в колонке "ПС". ')
     p[5].add_run('На прочих ПС ВЛ - ')
-    p[5].add_run('разземлены.').bold = True
+    p[5].add_run('разземлена.').bold = True
     pt_f = p[5].paragraph_format
     pt_f.first_line_indent = Mm(12.5)
     pt_f.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY

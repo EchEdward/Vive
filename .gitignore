@@ -1,15 +1,9 @@
-$ cat .gitignore
-
-*.spec
-/build
-/dist
 /Hesh_files
-*.db
-/gr_sb/*.jpg
-/Op_FIg/*.jpg
-/result_schemes/*.jpg
-/.mypy_cache
+/result_schemes
+/Op_Fig
+/gr_sb
+/images_grafik
 /__pycache__
-/images_grafik/*.jpg
-*.db
-rnn.py
+/Незавершённые модули
+Параметры 12 (формулы для расчета Карсона).xmcd
+~$Katal.xlsx

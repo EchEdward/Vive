@@ -138,13 +138,32 @@ def Word(inf, lbsz, f, f2, fname, name_vl, NS, var,grop,zpps,per_name,D_file, Tr
                 s2.append(ss2)
                 c2=True
         #v.append(i)
+        make_zy_list = []
         for j in range(len(lbsz[h])):
             if lbsz[h][j][0] in per_name[re_op_key[h]]:
                 new_op = per_name[re_op_key[h]][lbsz[h][j][0]]
             else:
                 new_op = lbsz[h][j][0]
             c1=True
-            s1.append('Опора №'+str(new_op)+' '+('('+lbsz[h][j][1]+' '+lbsz[h][j][2].replace(",",".")+')').replace(" ","\u00A0")+' на участке '+inf1[h])
+            #s1.append('Опора №'+str(new_op)+' '+('('+lbsz[h][j][1]+' '+lbsz[h][j][2].replace(",",".")+')').replace(" ","\u00A0")+' на участке '+inf1[h])
+            make_zy_list.append([new_op, ('('+lbsz[h][j][1]+' '+lbsz[h][j][2].replace(",",".")+')').replace(" ","\u00A0"),inf1[h]])
+
+
+        vetvi_dict = {}
+        for j in range(len(make_zy_list)):
+            if make_zy_list[j][2] not in vetvi_dict:
+                vetvi_dict[make_zy_list[j][2]] = [j]
+            else:
+                vetvi_dict[make_zy_list[j][2]].append(j)
+
+        #if len(inf)==1:
+
+        for key_name in vetvi_dict:
+            for j in vetvi_dict[key_name]:
+                s1.append('Опора №'+str(make_zy_list[j][0])+' '+make_zy_list[j][1])
+
+            if len(inf)>1:
+                s1[len(s1)-1]+= ' на участке '+key_name
 
     ign_f = set()
     for i in range(len(inf)):
@@ -355,14 +374,35 @@ def Word(inf, lbsz, f, f2, fname, name_vl, NS, var,grop,zpps,per_name,D_file, Tr
                     s2.append(ss2)
                     c2=True
 
+
+            make_zy_list = []
+
             for j in range(len(lbsz[i])):
                 if lbsz[i][j][0] in per_name[re_op_key[i]]:
                     new_op = per_name[re_op_key[i]][lbsz[i][j][0]]
                 else:
                     new_op = lbsz[i][j][0]
                 c3=True
-                s3.append('№'+str(new_op)+' '+('('+lbsz[i][j][1]+' '+lbsz[i][j][2].replace(",",".")+')').replace(" ","\u00A0")+' на участке '+inf1[i])
-        
+                #s3.append('№'+str(new_op)+' '+('('+lbsz[i][j][1]+' '+lbsz[i][j][2].replace(",",".")+')').replace(" ","\u00A0")+' на участке '+inf1[i])
+                
+                make_zy_list.append([new_op, ('('+lbsz[i][j][1]+' '+lbsz[i][j][2].replace(",",".")+')').replace(" ","\u00A0"),inf1[i]])
+
+            vetvi_dict = {}
+            for j in range(len(make_zy_list)):
+                if make_zy_list[j][2] not in vetvi_dict:
+                    vetvi_dict[make_zy_list[j][2]] = [j]
+                else:
+                    vetvi_dict[make_zy_list[j][2]].append(j)
+
+            #if len(inf)==1:
+
+            for key_name in vetvi_dict:
+                for j in vetvi_dict[key_name]:
+                    s3.append('№'+str(make_zy_list[j][0])+' '+make_zy_list[j][1])
+
+                if len(inf)>1:
+                    s3[len(s3)-1]+= ' на участке '+key_name
+
         
         # Цикл по ветвям
         p = []
@@ -509,7 +549,7 @@ def Word(inf, lbsz, f, f2, fname, name_vl, NS, var,grop,zpps,per_name,D_file, Tr
                         p[i][6].add_run(s1[j]+', ') 
                 k =2
             if c3:
-                p[i][6].add_run('Заземлить ВЛ на опорах ')
+                p[i][6].add_run('Заземлить ВЛ на опор%s ' % ('e' if len(s3)==1 else 'ах') )
                 for j in range(len(s3)):
                     if j == len(s3)-1:
                         p[i][6].add_run(s3[j]+'. ')

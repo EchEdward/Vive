@@ -44,7 +44,7 @@ def WordOid(vvl, sp_pzy,nm_d, ivl_gr, fname,nVL,grop, D_file, Trig):
     p = ['','','','','','','','','']
 
     # Картинка схемы сближения
-    p[0]=document.add_picture('Pictures/sh2.png', height=Inches(9.8)) #width=Inches(7)
+    p[0]=document.add_picture('Pictures/sh2.jpg', height=Inches(9.8)) #width=Inches(7)
     document.add_page_break() # Разрыв страницы
     
     # Заголовок
