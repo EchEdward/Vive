@@ -198,11 +198,12 @@ def Sblizh(ych,kord,d_kord_ivl,l):
             elif key[2]>key[3]:
                 if (ych[3]<key[2] and key[3]<ych[2]) or (key[3]<ych[2] and ych[3]<key[2]):
                     Trig = True
-            
+
+            if not Trig: continue
             if Trig:
                 if l==0 and d_kord_ivl[key][12]==kord[12]:
                     return ex[29]
-
+            
             h=[kord[3]-kord[6],kord[4]-kord[6],kord[5]-kord[6],kord[9],kord[10],\
                 d_kord_ivl[key][3]-d_kord_ivl[key][6],d_kord_ivl[key][4]-d_kord_ivl[key][6],\
                 d_kord_ivl[key][5]-d_kord_ivl[key][6],d_kord_ivl[key][9],d_kord_ivl[key][10]]
@@ -213,7 +214,7 @@ def Sblizh(ych,kord,d_kord_ivl,l):
             
             h1=[]
             x1=[]
-            
+ 
             for i in range(len(h)):
                 if (i==8 or i==9) and abs(l)<0.5 and ((d_kord_ivl[key][11] =="Л" and kord[11]=="П") or (d_kord_ivl[key][11] =="П" and kord[11]=="Л")):
                     continue
