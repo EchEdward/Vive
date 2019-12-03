@@ -9,3 +9,8 @@
 ~$Katal.xlsx
 Pictures/sh1.jpg
 Pictures/sh2.jpg
+/.mypy_cache
+/build
+/dist
+/dist1
+*.spec
