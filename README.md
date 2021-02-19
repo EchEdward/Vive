@@ -12,6 +12,8 @@
 
 ## Description
 
+![Alt Text](Pictures/splash.jpg)
+
 
 ## Used technologies
 
