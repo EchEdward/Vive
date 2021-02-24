@@ -1,7 +1,7 @@
 # Vive - calculating of a induct voltage
 
 ## Scope of application 
-**Vive** - десктопное приложение, предназначенное расчёта наведенного напряжения на воздушных линиях электропередач и автоматической генерацией на основании результатов расчётов отчётной документации формате .docx.
+**Vive** - десктопное приложение, предназначенное для расчёта наведенного напряжения на воздушных линиях электропередач и автоматической генерацией на основании результатов расчётов отчётной документации формате .docx.
 
 **Vive** - desktop application, designed for calculating induct voltage in overhead transmission power lines and automatically generation of special documentation in *.docx* format based on results of performed calculating.
 
