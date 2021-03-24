@@ -31,9 +31,9 @@ Storage of a entered initial data is realized in database *sqlite3*, on the basi
 
 ![Alt Text](.github/images/bd.png)
 
-Визуализация введённых исходных данных осуществляется при помощи инструмента работы с изображениями [Pillow](https://pypi.org/project/Pillow/4.2.1/) а также алгоритма который осуществляет рисование графических примитивов. В результате их работы создаются различные изображения. Данные изображения позволяют легко проверять верность введённых исходных данных, а также добавлять данные изображения в генерируемые документы.
+Визуализация введённых исходных данных осуществляется при помощи инструмента работы с изображениями [Pillow](https://pypi.org/project/Pillow/8.1.1/) а также алгоритма который осуществляет рисование графических примитивов. В результате их работы создаются различные изображения. Данные изображения позволяют легко проверять верность введённых исходных данных, а также добавлять данные изображения в генерируемые документы.
 
-Visualization of a entered initial data is realized using library for work with images [Pillow](https://pypi.org/project/Pillow/4.2.1/) and algorithm which realizes drawing graphic primitives. Result of its work is different created images. These images allow easy to check correctness of entered a initial data and add them into generating documents.
+Visualization of a entered initial data is realized using library for work with images [Pillow](https://pypi.org/project/Pillow/8.1.1/) and algorithm which realizes drawing graphic primitives. Result of its work is different created images. These images allow easy to check correctness of entered a initial data and add them into generating documents.
 
 ![Alt Text](.github/images/ss.png)
 
