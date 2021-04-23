@@ -11,7 +11,7 @@
   1. [Description](#Description)
   2. [Used technologies](#Used-technologies)
   3. [Installation](#Installation)
-  4. [License](#License)
+
 
 ## Description
 
@@ -84,6 +84,5 @@ For using the application necessity to install components from section [Used tec
         pip install -r requirements.txt
 
 
-## License 
-Licensed under the [MIT](LICENSE.txt) license.	
+
 
